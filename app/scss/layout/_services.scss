@@ -1,0 +1,50 @@
+.services {
+  padding: 55px 0px 60px;
+  text-align: center;
+}
+.services__top {
+  padding-bottom: 55px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 55px;
+  h2 {
+    font-family: $nov-font;
+    font-size: 22px;
+    color: #666262;
+    text-transform: uppercase;
+    margin-bottom: 17px;
+  }
+  p {
+    max-width: 845px;
+    margin: 0 auto;
+    font-family: $hel-font;
+  }
+}
+.services-item {
+  display: flex;
+  justify-content: space-between;
+  li {
+    max-width: 355px;
+    font-family: $hel-font;
+    img{
+        margin-bottom: 22px;
+    }
+    h4{
+        font-family: $nov-font;
+        margin-bottom: 19px;
+        font-size: 18px;
+        line-height: 22px;
+        color: #666262;
+        font-weight: 700;
+    }
+    p{
+        margin-bottom: 18px;
+    }
+    a{
+        color: $green;
+        transition: all .7s;
+        &:hover{
+            opacity: .6;
+        }
+    }
+  }
+}
