@@ -1,4 +1,5 @@
-.slider-item-1,.slider-item-2 {
+.slider-item-1,
+.slider-item-2 {
   background-image: url("../../img/slider-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -6,6 +7,17 @@
   padding: 310px 0px 150px;
   text-align: center;
   position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.178);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 1;
+    left: 0;
+    right: 0;
+  }
   h1 {
     font-family: $nov-font;
     font-size: 36px;
@@ -14,6 +26,7 @@
     line-height: 36px;
     max-width: 815px;
     margin: 0 auto 30px;
+    z-index: 50;
     font-weight: 500;
     span {
       color: $green;
@@ -47,14 +60,35 @@
 .slick-next {
   right: 12%;
   top: 50%;
-  &:after{
+  z-index: 4;
+  &:after {
     content: "\e906";
-
+    font-family: "icomoon";
+    font-size: 70px;
+    right: 0%;
+    top: 50%;
+    color: #fff;
+    opacity: 0.2;
+    position: absolute;
+    cursor: pointer;
+    transform: translateY(-50%);
   }
 }
 .slick-prev {
   left: 13%;
   top: 50%;
+  &:after {
+    content: "\e905";
+    font-family: "icomoon";
+    font-size: 70px;
+    left: 0%;
+    top: 50%;
+    color: #fff;
+    opacity: 0.2;
+    position: absolute;
+    cursor: pointer;
+    transform: translateY(-50%);
+  }
 }
 .slick-dots {
   position: absolute;
@@ -67,7 +101,7 @@
 .slick-dots .slick-active button {
   width: 15px;
   height: 15px;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 .slick-dots button {
   width: 8px;
