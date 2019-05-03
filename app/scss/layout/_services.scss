@@ -25,6 +25,7 @@
   li {
     max-width: 355px;
     font-family: $hel-font;
+    position: relative;
     img{
         margin-bottom: 22px;
     }
@@ -42,6 +43,10 @@
     a{
         color: $green;
         transition: all .7s;
+        position: absolute;
+        bottom: -25px;
+        left: 0;
+        right: 0;
         &:hover{
             opacity: .6;
         }
