@@ -48,8 +48,9 @@
 .footer__tel a {
   color: #fff;
   font-size: 18px;
-  &:hover{
-      opacity: .7;
+  transition: all .7s;
+  &:hover {
+    opacity: 0.7;
   }
 }
 .footer__links {
@@ -62,11 +63,11 @@
     position: absolute;
     left: 0;
   }
-  a{
-    transition: all .7s;
+  a {
+    transition: all 0.7s;
   }
-  a:hover{
-      color: #fff;
+  a:hover {
+    color: #fff;
   }
 }
 .footer-news {
@@ -91,6 +92,7 @@
   }
   button {
     width: 53px;
+    cursor: pointer;
     height: 40px;
     background-color: #828282;
     color: #fff;
@@ -121,7 +123,7 @@
   li {
     display: inline-block;
     & + li {
-      padding-left: 19px;  
+      padding-left: 19px;
     }
   }
   a {
@@ -130,9 +132,9 @@
     font-size: 12px;
     line-height: 18px;
     position: relative;
-    transition: all .7s;
-    &:hover{
-        color: #fff;
+    transition: all 0.7s;
+    &:hover {
+      color: #fff;
     }
   }
 }

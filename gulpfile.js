@@ -27,13 +27,15 @@ gulp.task('browser-sync', function () { // Создаем таск browser-sync
 
 gulp.task('scripts', function () {
 	return gulp.src([
-		'app/libs/jquery/dist/jquery.min.js' // Берем jQuery
+		'app/libs/jquery/dist/jquery.min.js',
+		"app/libs/slick-carousel/slick/slick.min.js",
+		"app/libs/fancybox-master/dist/jquery.fancybox.min.js",
+		 // Берем jQuery
 	])
 		.pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
 		.pipe(uglify()) // Сжимаем JS файл
-		.pipe(gulp.dest('app/js')); // Выгружаем в папку app/js
+		.pipe(gulp.dest('app/js')); // Выгружаем в папку app/js 
 });
-
 gulp.task('code', function () {
 	return gulp.src('app/*.html')
 		.pipe(browserSync.reload({ stream: true }))
