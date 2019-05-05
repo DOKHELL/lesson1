@@ -1,6 +1,6 @@
 .slider-item-1,
 .slider-item-2 {
-  background-image: url("../../img/slider-bg.jpg");
+  background-image: url("../img/slider-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -43,7 +43,7 @@
   }
 }
 .slider-item-2 {
-  background-image: url("../../img/slider-bg2.jpg");
+  background-image: url("../img/slider-bg2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -55,6 +55,7 @@
   height: 65px;
   background-color: transparent;
   border: none;
+  cursor: pointer;
   outline: none;
   transform: translateY(-50%);
 }

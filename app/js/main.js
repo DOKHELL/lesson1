@@ -8,7 +8,7 @@ $(function () {
     });
 
 });
-$("#serch-fancy").on('click', function () {
+$("#search-fancy").on('click', function () {
     $.fancybox.open('<div class="message"><h2>Hello!</h2><p>You are awesome!</p></div>');
 });
 $('[data-fancybox="preview"]').fancybox({
@@ -16,3 +16,17 @@ $('[data-fancybox="preview"]').fancybox({
       autoStart : true
     }
   });
+  $(function(){
+    var link = $('.m-menu-link');
+    var close = $('.close-menu');
+    var menu = $('.m-menu');
+
+    link.on('click', function(event){
+            event.preventDefault();
+            menu.toggleClass('m-menu__active');
+    });
+    close.on('click', function(event){
+            event.preventDefault();
+            menu.toggleClass('m-menu__active');
+    });
+});
