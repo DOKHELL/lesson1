@@ -1,3 +1,12 @@
+.our-work {
+  h2 {
+    margin-bottom: 17px;
+  }
+  p {
+    max-width: 840px;
+    margin: 0 auto 44px;
+  }
+}
 .our-work__content {
   padding: 75px 0 43px;
   position: relative;
@@ -10,7 +19,7 @@
     width: 100%;
     position: absolute;
     z-index: -1;
-    top: 20px;
+    top: 0;
     left: 0;
   }
   .btn {
@@ -20,19 +29,6 @@
       color: $green;
       background-color: #fff;
     }
-  }
-  h2 {
-    font-family: $nov-font;
-    font-size: 22px;
-    color: #666262;
-    margin-bottom: 17px;
-  }
-  p {
-    max-width: 840px;
-    margin: 0 auto;
-    font-family: $hel-font;
-    color: $color-text;
-    margin-bottom: 44px;
   }
 }
 .our-work__items {
@@ -50,7 +46,7 @@
     width: 100%;
     height: auto;
   }
-  a {
+  .our-work__fancy--img {
     &:hover {
       opacity: 0.4;
       &:after {
@@ -67,7 +63,7 @@
       }
     }
   }
-  a img {
+  .our-work__fancy--img img {
     position: absolute;
     right: 0;
     left: 45px;
@@ -84,4 +80,7 @@
   text-align: center;
   font-weight: 700;
   display: block;
+  &:hover{
+    opacity: .6;
+  }
 }

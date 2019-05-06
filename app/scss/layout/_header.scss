@@ -11,36 +11,62 @@
   border-bottom: 1px solid #fff;
   padding-bottom: 17px;
   margin-bottom: 25px;
-  .logo {
+  line-height: 0;
+}
+  .header-top__logo {
     transition: all 0.7s;
     &:hover {
       opacity: 0.7;
     }
   }
-}
 .header-social,
-.footer-social {
+.footer__social {
   padding-top: 12px;
   font-size: 0;
   li {
     display: inline-block;
-    font-size: 16px;
     & + li {
       padding-left: 10px;
     }
+  }
+  a{
+    font-size: 16px;
   }
 }
 .menu-wrap {
   display: flex;
   justify-content: space-between;
 }
+ul.drop-menu ul{
+  background-color: rgba(122, 119, 128,7);
+}
+.drop-list ul a{
+  font-size: 14px;
+  padding: 5px;
+}
+ul.drop-menu > li {
+  list-style: none;
+  position: relative;
+  height: 24px;
+}
+
+ul.drop-menu ul{
+  display: none; 
+        
+}
+ul.drop-menu > li:hover ul{
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 24px;
+}
 .menu {
   ul {
     font-size: 0;
-  }
-  li {
-    display: inline-block;
-    & + li {
+      }
+  .drop-list {
+    display: inline-block;  
+    & + .drop-list {
       padding-left: 40px;
     }
   }
@@ -54,8 +80,47 @@
     }
   }
 }
+.m-menu-link{
+  display: none;
+  font-size: 30px;
+  color: $color-text;
+}
+.m-menu{
+  position:fixed;
+  right: 0;
+  top:0;
+  height:100vh;
+  width:100%;
+  display: flex;
+  font-size: 25px;
+  text-transform: uppercase;
+  line-height: 60px;
+  background-color: #f9f9f9;;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+  transform: translateX(100%);
+  a{
+    color: $color-text;
+    font-size: 20px;
+  }
+}
+.m-menu__active{
+  transform: translate(0%)
+}
+.close-menu{
+  position: fixed;
+  right: 15px;
+  top: 50px;
+  font-size: 40px;
+  font-weight: 900;
+      &:hover{
+          cursor: pointer;
+      }
+}
 .header-social,
-.footer-social {
+.footer__social {
   a {
     background-color: #fff;
     border-radius: 50%;
@@ -68,36 +133,31 @@
       opacity: 1;
     }
   }
+  .social-twitter,.social-facebook,.social-rss {
+    &:after {
+    position: absolute;
+    font-family: "icomoon";
+    color: $color-text; 
+    font-size: 18px;
+    top: 16px;
+    left: 12px;
+    }
+  }
   .social-twitter {
     &:after {
       content: "\e904";
-      position: absolute;
-      font-family: "icomoon";
-      top: 7px;
       left: 10px;
-      color: $color-text;
+      top: 17px;
     }
   }
   .social-facebook {
     &:after {
       content: "\f09a";
-      position: absolute;
-      font-family: "icomoon";
-      top: 7px;
-      font-size: 18px;
-      left: 12px;
-      color: $color-text;
     }
   }
   .social-rss {
     &:after {
       content: "\f09e";
-      position: absolute;
-      font-family: "icomoon";
-      top: 5px;
-      font-size: 18px;
-      left: 12px;
-      color: $color-text;
     }
   }
 }

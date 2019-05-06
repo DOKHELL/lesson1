@@ -11,10 +11,10 @@
 
 <body>
     <div id="wrapper">
-        <!-- <header id="header">
+        <header id="header">
             <div class="container">
                 <div class="header-top">
-                    <div class="logo">
+                    <div class="header-top__logo">
                         <a href="#">
                             <img src="img/logo.png" alt="">
                         </a>
@@ -26,16 +26,94 @@
                     </ul>
                 </div>
                 <div class="menu-wrap">
-                    <nav class="menu">
-                        <ul>
-                            <li><a href="#">home</a></li>
-                            <li><a href="#">portfolio</a></li>
-                            <li><a href="#">about</a></li>
-                            <li><a href="#">services</a></li>
-                            <li><a href="#">archive</a></li>
-                            <li><a href="#">blog</a></li>
-                            <li><a href="#">other pages</a></li>
-                            <li><a href="#">contact us</a></li>
+                    <a href="#" class="m-menu-link">
+                        <div class="bars icon-previous"></div>
+                    </a>
+                    <ul class="m-menu">
+                        <li class="close-menu">&times;</li>
+                        <li><a href="#">portfolio</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">services</a></li>
+                        <li><a href="#">archive</a></li>
+                        <li><a href="#">blog</a></li>
+                        <li><a href="#">other pages</a></li>
+                        <li><a href="#">contact us</a></li>
+                    </ul>
+                    <nav class="menu visible-lg">
+                        <ul class="drop-menu">
+                            <li class="drop-list">
+                                <a href="#">home</a>
+                                <ul>
+                                    <li><a href="#">Financial Accounting</a></li>
+                                    <li><a href="#">Project Accounting</a></li>
+                                    <li><a href="#">Distribution</a></li>
+                                    <li><a href="#">Manufacturing</a></li>
+                                    <li><a href="#">CRM Integration</a></li>
+                                </ul>
+                            </li>
+                            <li class="drop-list"><a href="#">portfolio</a>
+                                <ul>
+                                    <li><a href="#">Financial Accounting</a></li>
+                                    <li><a href="#">Project Accounting</a></li>
+                                    <li><a href="#">Distribution</a></li>
+                                    <li><a href="#">Manufacturing</a></li>
+                                    <li><a href="#">CRM Integration</a></li>
+                                </ul>
+                            </li>
+                            <li class="drop-list"><a href="#">about</a>
+                                <ul>
+                                    <li><a href="#">Financial Accounting</a></li>
+                                    <li><a href="#">Project Accounting</a></li>
+                                    <li><a href="#">Distribution</a></li>
+                                    <li><a href="#">Manufacturing</a></li>
+                                    <li><a href="#">CRM Integration</a></li>
+                                </ul>
+                            </li>
+                            <li class="drop-list"><a href="#">services</a>
+                                <ul>
+                                    <li><a href="#">Financial Accounting</a></li>
+                                    <li><a href="#">Project Accounting</a></li>
+                                    <li><a href="#">Distribution</a></li>
+                                    <li><a href="#">Manufacturing</a></li>
+                                    <li><a href="#">CRM Integration</a></li>
+                                </ul>
+                            </li>
+                            <li class="drop-list"><a href="#">archive</a>
+                                <ul>
+                                    <li><a href="#">Financial Accounting</a></li>
+                                    <li><a href="#">Project Accounting</a></li>
+                                    <li><a href="#">Distribution</a></li>
+                                    <li><a href="#">Manufacturing</a></li>
+                                    <li><a href="#">CRM Integration</a></li>
+                                </ul>
+                            </li>
+                            <li class="drop-list"><a href="#">blog</a>
+                                <ul>
+                                    <li><a href="#">Financial Accounting</a></li>
+                                    <li><a href="#">Project Accounting</a></li>
+                                    <li><a href="#">Distribution</a></li>
+                                    <li><a href="#">Manufacturing</a></li>
+                                    <li><a href="#">CRM Integration</a></li>
+                                </ul>
+                            </li>
+                            <li class="drop-list"><a href="#">other pages</a>
+                                <ul>
+                                    <li><a href="#">Financial Accounting</a></li>
+                                    <li><a href="#">Project Accounting</a></li>
+                                    <li><a href="#">Distribution</a></li>
+                                    <li><a href="#">Manufacturing</a></li>
+                                    <li><a href="#">CRM Integration</a></li>
+                                </ul>
+                            </li>
+                            <li class="drop-list"><a href="#">contact us</a>
+                                <ul>
+                                    <li><a href="#">Financial Accounting</a></li>
+                                    <li><a href="#">Project Accounting</a></li>
+                                    <li><a href="#">Distribution</a></li>
+                                    <li><a href="#">Manufacturing</a></li>
+                                    <li><a href="#">CRM Integration</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </nav>
                     <div class="search-form">
@@ -43,9 +121,9 @@
                     </div>
                 </div>
             </div>
-        </header> -->
+        </header>
         <main class="main">
-            <!-- <section class="slider">
+            <section class="slider">
                 <ul class="slider-items">
                     <li class="slider-item-1">
                         <h1>We <span>Deliver</span> nothing Short of Awesome!</h1>
@@ -68,10 +146,10 @@
                         <a href="#" class="btn">Portfolio</a>
                     </li>
                 </ul>
-            </section> -->
+            </section>
             <section class="services">
                 <div class="container">
-                    <div class="services__top">
+                    <div class="services__info">
                         <h2>We are a Small Team Doing Big Things!</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent justo ligula, interdum ut
                             lobortis
@@ -79,23 +157,29 @@
                             pretium.
                         </p>
                     </div>
-                    <ul class="services-item">
+                    <ul class="services__item">
                         <li>
-                            <img src="img/service-img1.png" alt="">
+                            <div class="services__item-img">
+                                <img src="img/service-img1.png" alt="">
+                            </div>
                             <h4>Service 1</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur praseinti adipiscing elit. Praesent lato justo
                                 ligula, interdu ut lobortis quis dolor amet.</p>
                             <a href="#">Find Out More</a>
                         </li>
                         <li>
-                            <img src="img/service-img1.png" alt="">
+                            <div class="services__item-img">
+                                <img src="img/service-img1.png" alt="">
+                            </div>
                             <h4>Service 1</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur praseinti adipiscing elit. Praesent lato justo
                                 ligula, interdu ut lobortis quis dolor amet.</p>
                             <a href="#">Find Out More</a>
                         </li>
                         <li>
-                            <img src="img/service-img1.png" alt="">
+                            <div class="services__item-img">
+                                <img src="img/service-img1.png" alt="">
+                            </div>
                             <h4>Service 1</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur praseinti adipiscing elit. Praesent lato justo
                                 ligula, interdu ut lobortis quis dolor amet.</p>
@@ -117,21 +201,21 @@
                         <div class="our-work__items">
                             <div class="our-work__item">
                                 <img src="img/our-workpc.png" alt="">
-                                <span class="our-work__title">Circle Icons</span>
-                                <a href="https://source.unsplash.com/Uszp5Gkg0AI/2400x1600" data-fancybox="images"><img
-                                    src="img/slider-ourwork.jpg" alt=""></a>
+                                <a href="#" class="our-work__title">Circle Icons</a>
+                                <a class="our-work__fancy--img" href="https://source.unsplash.com/Uszp5Gkg0AI/2400x1600"
+                                    data-fancybox="images"><img src="img/slider-ourwork.jpg" alt=""></a>
                             </div>
                             <div class="our-work__item">
                                 <img src="img/our-workpc.png" alt="">
-                                <span class="our-work__title">Arrows</span>
-                                <a href="https://source.unsplash.com/5CpaOSMWLdQ/2400x1600" data-fancybox="images"><img
-                                    src="img/slider-ourwork2.jpg" alt=""></a>
+                                <a href="#" class="our-work__title">Arrows</a>
+                                <a class="our-work__fancy--img" href="https://source.unsplash.com/5CpaOSMWLdQ/2400x1600"
+                                    data-fancybox="images"><img src="img/slider-ourwork2.jpg" alt=""></a>
                             </div>
                             <div class="our-work__item">
                                 <img src="img/our-workpc.png" alt="">
-                                <span class="our-work__title">Portfolio Theme</span>
-                                <a href="https://source.unsplash.com/26-lAP0XprM/2400x1600"
-                                        data-fancybox="images"><img src="img/slider-ourwork3.jpg" alt=""></a>
+                                <a href="#" class="our-work__title">Portfolio Theme</a>
+                                <a class="our-work__fancy--img" href="https://source.unsplash.com/26-lAP0XprM/2400x1600"
+                                    data-fancybox="images"><img src="img/slider-ourwork3.jpg" alt=""></a>
                             </div>
                         </div>
                         <h2>Do you Like What You See?</h2>
@@ -145,18 +229,18 @@
                 </div>
             </section>
         </main>
-        <!-- <footer id="footer">
+        <footer id="footer">
             <div class="container">
-                <div class="footer-heading">
-                    <div class="footer-social__info">
-                        <div class="footer-top">
-                            <div class="footer-top__wrap">
+                <div class="footer__heading">
+                    <div class="footer__social-info">
+                        <div class="footer__top">
+                            <div class="footer__top-wrap">
                                 <div class="logo">
                                     <a href="#">
                                         <img src="img/logo.png" alt="">
                                     </a>
                                 </div>
-                                <ul class="footer-social">
+                                <ul class="footer__social">
                                     <li><a class="social-twitter" href="#"></a></li>
                                     <li><a class="social-facebook" href="#"></a></li>
                                     <li><a class="social-rss" href="#"></a></li>
@@ -166,18 +250,18 @@
                                 nunc rutrum placerat. Proin eu mi vitae neque veh interdum id nec turpis nam auctor
                                 faucibus sollicitudin.</p>
                         </div>
-                        <div class="footer-info">
-                            <div class="footer-contact">
+                        <div class="footer__info">
+                            <div class="footer__info-contact">
                                 <h3>Contact info</h3>
                                 <ul class="footer__contacs">
-                                    <li class="footer__adress">222 Ave C South
+                                    <li class="footer__contacs-adress">222 Ave C South
                                         Saskatoon, Saskatchewan
                                         Canada S7K 2N5</li>
-                                    <li class="footer__email">info@deliver.ca</li>
-                                    <li class="footer__tel"><a href="tel:1.306.222.3456">1.306.222.3456</a></li>
+                                    <li><a href="#" class="footer__contacs-email">info@deliver.ca</a></li>
+                                    <li class="footer__contacs-tel"><a href="tel:1.306.222.3456">1.306.222.3456</a></li>
                                 </ul>
                             </div>
-                            <div class="footer-contact">
+                            <div class="footer__info-contact">
                                 <h3>Quick Links</h3>
                                 <ul class="footer__links">
                                     <li><a href="#">Portfolio</a></li>
@@ -188,22 +272,22 @@
                                     <li><a href="#">Contact Us</a></li>
                                 </ul>
                             </div>
-                            <div class="footer-news">
+                            <div class="footer__news">
                                 <h3>Newsletter</h3>
                                 <p>Lorem ipsum dolor sit amet dolor consectetur adipiscing elit.</p>
-                                <form class="form">
+                                <form class="footer__news-form">
                                     <input placeholder="Email" type="email">
-                                    <button>OK</button>
+                                    <button type="submit">OK</button>
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="footer-area">
-                    <div class="footer-copy">
-                        <p>Copyright 2013 <span>Deliver</span>. All Rights Reserved.</p>
+                <div class="footer__area">
+                    <div class="footer__copy">
+                        <p>Copyright 2013 <a href="#">Deliver</a>. All Rights Reserved.</p>
                     </div>
-                    <div class="footer-page">
+                    <div class="footer__page">
                         <ul>
                             <li><a href="#">About</a></li>
                             <li><a href="#">Privacy Policy</a></li>
@@ -211,7 +295,7 @@
                         </ul>
                     </div>
                 </div>
-        </footer> -->
+        </footer>
     </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>

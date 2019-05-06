@@ -2,23 +2,18 @@
   padding: 55px 0px 60px;
   text-align: center;
 }
-.services__top {
+.services__info {
   padding-bottom: 55px;
   border-bottom: 1px solid #ccc;
   h2 {
-    font-family: $nov-font;
-    font-size: 22px;
-    color: #666262;
-    text-transform: uppercase;
     margin-bottom: 17px;
   }
   p {
     max-width: 845px;
     margin: 0 auto;
-    font-family: $hel-font;
   }
 }
-.services-item {
+.services__item {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -28,7 +23,7 @@
     position: relative;
     margin-top: 55px;
   }
-    img {
+  .services__item-img {
       margin-bottom: 22px;
     }
     h4 {

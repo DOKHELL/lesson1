@@ -21,7 +21,7 @@
     "gulp-sass": "^4.0.2",
     "gulp-uglifyjs": "^0.6.2",
     "imagemin": "^6.1.0",
-    "imagemin-pngquant": "^7.0.0",
+    "imagemin-pngquant": "^5.0.1",
     "normalize.css": "^8.0.1",
     "pngquant": "^2.0.1"
   },
