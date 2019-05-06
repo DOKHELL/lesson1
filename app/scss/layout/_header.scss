@@ -9,7 +9,7 @@
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #fff;
-  padding-bottom: 17px;
+  padding-bottom: 31px;
   margin-bottom: 25px;
   line-height: 0;
 }
@@ -22,6 +22,7 @@
 .header-social,
 .footer__social {
   font-size: 0;
+  padding-top: 10px;
   li {
     display: inline-block;
     & + li {
