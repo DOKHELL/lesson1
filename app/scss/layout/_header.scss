@@ -21,7 +21,6 @@
   }
 .header-social,
 .footer__social {
-  padding-top: 12px;
   font-size: 0;
   li {
     display: inline-block;
@@ -65,9 +64,10 @@ ul.drop-menu > li:hover ul{
     font-size: 0;
       }
   .drop-list {
-    display: inline-block;  
-    & + .drop-list {
-      padding-left: 40px;
+    padding: 0 20px;
+    display: inline-block;
+    &:nth-child(1){
+      padding-left: 0;
     }
   }
   a {

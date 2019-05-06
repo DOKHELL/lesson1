@@ -50,6 +50,9 @@
       height: 990px;
     }
   }
+  .our-work__title{
+    margin-bottom: 10px;
+  }
   .footer__social-info {
     flex-direction: column;
     align-items: center;
@@ -63,8 +66,6 @@
   }
   .footer__info {
     max-width: 85%;
-  }
-  .footer__info {
     h3 {
       margin-bottom: 5px;
     }
@@ -73,9 +74,6 @@
 @media (max-width: $table-phone) {
   body {
     font-size: 14px;
-  }
-  .services__info h2 {
-    font-size: 17px;
   }
   .services__item {
     li {
@@ -95,9 +93,9 @@
   }
   .services__info {
     padding-bottom: 25px;
-  }
-  .our-work__content h2 {
-    font-size: 17px;
+    h2 {
+      font-size: 17px;
+    }
   }
   .our-work__title {
     font-size: 15px;
@@ -106,13 +104,16 @@
     padding-bottom: 30px;
     margin-bottom: 20px;
   }
-  .our-work__content p {
-    margin-bottom: 20px;
-  }
   .our-work__content {
     padding: 40px 0 43px;
     &:before {
       height: 960px;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 17px;
     }
   }
   .footer__contacs-adress,
