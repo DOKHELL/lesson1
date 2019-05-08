@@ -14,25 +14,11 @@
   line-height: 0;
 }
   .header-top__logo {
-    transition: all 0.7s;
+    transition: opacity 0.7s;
     &:hover {
       opacity: 0.7;
     }
   }
-.header-social,
-.footer__social {
-  font-size: 0;
-  padding-top: 10px;
-  li {
-    display: inline-block;
-    & + li {
-      padding-left: 10px;
-    }
-  }
-  a{
-    font-size: 16px;
-  }
-}
 .menu-wrap {
   display: flex;
   justify-content: space-between;
@@ -51,31 +37,39 @@ ul.drop-menu > li {
 }
 
 ul.drop-menu ul{
-  display: none; 
-        
+  visibility: hidden;
+  opacity: 0;
+  display: block;
+  left: 0;
+  min-width: 200px;
+  right: 0;
+  position: absolute;
+  pointer-events: none;
 }
 ul.drop-menu > li:hover ul{
+  transition: .7s;
   display: block;
-  position: absolute;
-  left: 0;
+  visibility: visible;
+  opacity: 1;
+  z-index: 10;
+  pointer-events: painted;  
   top: 24px;
 }
 .menu {
   ul {
     font-size: 0;
+    margin-left: -40px;
       }
   .drop-list {
-    padding: 0 20px;
+    padding-left:40px;
     display: inline-block;
-    &:nth-child(1){
-      padding-left: 0;
-    }
   }
   a {
     font-size: 18px;
     font-family: $nov-font;
     color: #fff;
-    transition: all 0.8s;
+    transition: color 0.8s;
+    position: relative;
     &:hover {
       color: $green;
     }
@@ -95,7 +89,7 @@ ul.drop-menu > li:hover ul{
   display: flex;
   font-size: 25px;
   text-transform: uppercase;
-  line-height: 60px;
+  line-height: 50px;
   background-color: #f9f9f9;;
   flex-direction: column;
   align-items: center;
@@ -113,23 +107,30 @@ ul.drop-menu > li:hover ul{
 .close-menu{
   position: fixed;
   right: 15px;
-  top: 50px;
+  top: 10px;
   font-size: 40px;
   font-weight: 900;
       &:hover{
           cursor: pointer;
       }
 }
-.header-social,
-.footer__social {
+.social {
+    font-size: 0;
+    padding-top: 10px;
+    margin-right: -10px;
+    li {
+      display: inline-block;
+      padding-right: 10px;
+    }
   a {
     background-color: #fff;
     border-radius: 50%;
     width: 35px;
     position: relative;
     height: 35px;
+    font-size: 16px;
     opacity: 0.8;
-    transition: all 0.7s;
+    transition: opacity 0.7s;
     &:hover {
       opacity: 1;
     }
@@ -140,17 +141,16 @@ ul.drop-menu > li:hover ul{
     font-family: "icomoon";
     color: $color-text; 
     font-size: 18px;
-    top: 16px;
-    left: 12px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     }
   }
   .social-twitter {
     &:after {
       content: "\e904";
-      left: 10px;
-      top: 17px;
-    }
   }
+}
   .social-facebook {
     &:after {
       content: "\f09a";
