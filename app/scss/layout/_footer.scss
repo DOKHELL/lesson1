@@ -3,18 +3,19 @@
   background-color: #333333;
 }
 .footer__heading {
-  padding-bottom: 30px;
-  margin-bottom: 25px;
-  border-bottom: 1px solid #808080;
-}
-.footer__social-info {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 30px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #808080;
 }
-.footer__top {
+.footer__holder {
   max-width: 440px;
+  p {
+    margin: 0;
+  }
 }
-.footer__top-wrap {
+.footer__holder-wrap {
   display: flex;
   line-height: 0;
   justify-content: space-between;
@@ -41,29 +42,29 @@
   max-width: 650px;
   width: 100%;
 }
-.footer__contacs-adress {
+.footer__contacts-adress {
   margin-bottom: 13px;
 }
-.footer__contacs-email {
+.footer__contacts-email {
   margin-bottom: 15px;
-  transition: color 0.7s;
+  transition: color .7s;
   &:hover {
     color: #fff;
   }
 }
-.footer__contacs-tel a {
+.footer__contacts-tel a {
   color: #fff;
   font-size: 18px;
-  transition: opacity 0.7s;
+  transition: opacity .7s;
   &:hover {
-    opacity: 0.7;
+    opacity: .7;
   }
 }
 .footer__links {
-  padding-left: 17px;
   position: relative;
-  a{
-    transition: color 0.7s;
+  a {
+    padding-left: 17px;
+    transition: color .7s;
   }
   a:before {
     content: "\e906";
@@ -76,7 +77,7 @@
     color: #fff;
   }
 }
-.footer__news {
+.footer__newsletter {
   max-width: 225px;
   h3 {
     font-family: $nov-font;
@@ -105,12 +106,12 @@
   margin: 0;
   a {
     color: #fff;
-    transition: color 0.6s;
+    transition: color .6s;
     &:hover {
       color: #828282;
     }
   }
-  p{
+  p {
     margin: 0;
   }
 }
@@ -130,9 +131,21 @@
     font-size: 12px;
     line-height: 18px;
     position: relative;
-    transition: color 0.7s;
+    transition: color .7s;
     &:hover {
       color: #fff;
     }
+  }
+}
+input[type="button"] {
+  background-color: #828282;
+  color: #fff;
+  font-family: $nov-font;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 0;
+  transition: opacity .7s;
+  &:hover {
+    opacity: .8;
   }
 }

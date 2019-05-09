@@ -10,6 +10,8 @@ body {
   line-height: 24px;
   color: $color-text;
   background-color: #fff;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: none;
 }
 h1,
 h2,
@@ -18,7 +20,11 @@ h4,
 h5,
 h6,
 p {
-  margin: 0 0 20px;
+  margin: 0 auto 44px;
+  max-width: 840px;
+}
+h2 {
+  margin-bottom: 17px;
 }
 ul,
 li {
@@ -37,4 +43,14 @@ button {
 }
 button {
   cursor: pointer;
+}
+input [type="email"],
+input [type="tel"],
+input[type="search"],
+input[type="text"],
+input[type="password"],
+input[type="file"],
+input[type="submit"],
+textarea {
+  -webkit-appearance: none;
 }

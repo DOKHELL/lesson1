@@ -1,5 +1,5 @@
 files:
-    include: '**/*.scss'
+    include: 'app/scss/**/*.scss'
 options:
     formatter: html
     output-file: 'sass-lint-global.html'

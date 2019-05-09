@@ -4,10 +4,10 @@ $(function () {
     dots: true,
     prevArrow: '<button type="button" class="slick-btn slick-prev"></button>',
     nextArrow: '<button type="button" class="slick-btn slick-next"></button>',
-
   });
-
 });
+
+
 $(function initHolderBg() {
   "use strict";
   $('.slider-items .slider-item .slider-item__img').each(function () {
@@ -26,28 +26,45 @@ $(function initHolderBg() {
     }
   });
 })
+
+
 $("#search-fancy").on('click', function () {
   $.fancybox.open('<div class="message"><h2>Hello!</h2><p>You are awesome!</p></div>');
 });
+
 $('[data-fancybox="preview"]').fancybox({
   thumbs: {
     autoStart: true
   }
 });
-$(function () {
-  var link = $('.m-menu-link');
-  var close = $('.close-menu');
-  var menu = $('.m-menu');
 
-  link.on('click', function (event) {
-    event.preventDefault();
-    menu.toggleClass('m-menu__active');
-  });
-  close.on('click', function (event) {
-    event.preventDefault();
-    menu.toggleClass('m-menu__active');
-  });
-});
+
 $(function () {
   $('.services__matchheight').matchHeight();
+});
+
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(event) {
+if (!event.target.matches('.dropbtn')) {
+
+  var dropdowns = document.getElementsByClassName("dropdown-content");
+  var i;
+  for (i = 0; i < dropdowns.length; i++) {
+    var openDropdown = dropdowns[i];
+    if (openDropdown.classList.contains('show')) {
+      openDropdown.classList.remove('show');
+    }
+  }
+}
+}
+
+
+$("#navToggle").click(function() {
+  $(this).toggleClass("active");
+  $(".overlay").toggleClass("open");
+  // this line ▼ prevents content scroll-behind
+  $("body").toggleClass("locked"); 
 });

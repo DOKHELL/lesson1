@@ -6,10 +6,12 @@ var gulp = require('gulp'), // Подключаем Gulp
 	cssnano = require('gulp-cssnano'), // Подключаем пакет для минификации CSS
 	rename = require('gulp-rename'), // Подключаем библиотеку для переименования файлов
 	del = require('del'), // Подключаем библиотеку для удаления файлов и папок
-	imagemin     = require('gulp-imagemin'), // Подключаем библиотеку для работы с изображениями
-	pngquant     = require('imagemin-pngquant'), // Подключаем библиотеку для работы с png
-	cache        = require('gulp-cache'), // Подключаем библиотеку кеширования
+	imagemin = require('gulp-imagemin'), // Подключаем библиотеку для работы с изображениями
+	pngquant = require('imagemin-pngquant'), // Подключаем библиотеку для работы с png
+	cache = require('gulp-cache'), // Подключаем библиотеку кеширования
 	autoprefixer = require('gulp-autoprefixer');// Подключаем библиотеку для автоматического добавления префиксов
+
+
 
 gulp.task('scss', function () { // Создаем таск scss
 	return gulp.src('app/scss/**/*.scss') // Берем источник
@@ -34,7 +36,7 @@ gulp.task('scripts', function () {
 		"app/libs/slick-carousel/slick/slick.min.js",
 		"app/libs/fancybox-master/dist/jquery.fancybox.min.js",
 		"app/libs/matchHeight/jquery.matchHeight.js",
-		 // Берем jQuery
+		// Берем jQuery
 	])
 		.pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
 		.pipe(uglify()) // Сжимаем JS файл
@@ -110,4 +112,4 @@ gulp.task('watch', function () {
 	gulp.watch(['app/js/main.js', 'app/libs/**/*.js'], gulp.parallel('scripts')); // Наблюдение за главным JS файлом и за библиотеками
 });
 gulp.task('default', gulp.parallel('scss', 'browser-sync', 'watch', 'css-min'));
-gulp.task('build', gulp.parallel('prebuild', 'clean', 'scss', 'scripts',"img"));
+gulp.task('build', gulp.parallel('prebuild', 'clean', 'scss', 'scripts', "img"));

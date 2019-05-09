@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -12,6 +13,7 @@
     <link rel="stylesheet" href="css/main.min.css">
     <link href="favicon.ico" rel="shortcut icon">
 </head>
+
 <body>
     <div id="wrapper">
         <header id="header">
@@ -27,82 +29,27 @@
                     </ul>
                 </div>
                 <div class="menu-wrap">
-                    <a href="#" class="m-menu-link">
-                        <div class="bars icon-bars"></div>
-                    </a>
-                    <ul class="m-menu">
-                        <li class="close-menu">&times;</li>
-                        <li><a href="#">portfolio</a></li>
-                        <li><a href="#">about</a></li>
-                        <li><a href="#">services</a></li>
-                        <li><a href="#">archive</a></li>
-                        <li><a href="#">blog</a></li>
-                        <li><a href="#">other pages</a></li>
-                        <li><a href="#">contact us</a></li>
-                    </ul>
-                    <nav class="menu visible-lg">
-                        <ul class="drop-menu">
-                            <li class="drop-list">
-                                <a href="#">home</a>
-                            </li>
-                            <li class="drop-list"><a href="#">portfolio</a>
-                            </li>
-                            <li class="drop-list"><a href="#">about</a>
-                                <ul>
-                                    <li><a href="#">Financial Accounting</a></li>
-                                    <li><a href="#">Project Accounting</a></li>
-                                    <li><a href="#">Distribution</a></li>
-                                    <li><a href="#">Manufacturing</a></li>
-                                    <li><a href="#">CRM Integration</a></li>
-                                </ul>
-                            </li>
-                            <li class="drop-list"><a href="#">services</a>
-                                <ul>
-                                    <li><a href="#">Financial Accounting</a></li>
-                                    <li><a href="#">Project Accounting</a></li>
-                                    <li><a href="#">Distribution</a></li>
-                                    <li><a href="#">Manufacturing</a></li>
-                                    <li><a href="#">CRM Integration</a></li>
-                                </ul>
-                            </li>
-                            <li class="drop-list"><a href="#">archive</a>
-                                <ul>
-                                    <li><a href="#">Financial Accounting</a></li>
-                                    <li><a href="#">Project Accounting</a></li>
-                                    <li><a href="#">Distribution</a></li>
-                                    <li><a href="#">Manufacturing</a></li>
-                                    <li><a href="#">CRM Integration</a></li>
-                                </ul>
-                            </li>
-                            <li class="drop-list"><a href="#">blog</a>
-                                <ul>
-                                    <li><a href="#">Financial Accounting</a></li>
-                                    <li><a href="#">Project Accounting</a></li>
-                                    <li><a href="#">Distribution</a></li>
-                                    <li><a href="#">Manufacturing</a></li>
-                                    <li><a href="#">CRM Integration</a></li>
-                                </ul>
-                            </li>
-                            <li class="drop-list"><a href="#">other pages</a>
-                                <ul>
-                                    <li><a href="#">Financial Accounting</a></li>
-                                    <li><a href="#">Project Accounting</a></li>
-                                    <li><a href="#">Distribution</a></li>
-                                    <li><a href="#">Manufacturing</a></li>
-                                    <li><a href="#">CRM Integration</a></li>
-                                </ul>
-                            </li>
-                            <li class="drop-list"><a href="#">contact us</a>
-                                <ul>
-                                    <li><a href="#">Financial Accounting</a></li>
-                                    <li><a href="#">Project Accounting</a></li>
-                                    <li><a href="#">Distribution</a></li>
-                                    <li><a href="#">Manufacturing</a></li>
-                                    <li><a href="#">CRM Integration</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
+                    <div class="overlay">
+                        <nav class="overlayMenu">
+                            <ul role="menu">
+                                <li><a href="#" role="menuitem">home</a></li>
+                                <li><a href="#" role="menuitem">portfolio</a></li>
+                                <li><a href="#" role="menuitem">about</a></li>
+                                <li><a href="#" role="menuitem">services</a></li>
+                                <li class="dropdown">
+                                    <a onclick="myFunction()" class="dropbtn">archive</a>
+                                    <div id="myDropdown" class="dropdown-content">
+                                        <a href="#">Link 1</a>
+                                        <a href="#">Link 2</a>
+                                        <a href="#">Link 3</a>
+                                    </div>
+                                </li>
+                                <li><a href="#" role="menuitem">other pages</a></li>
+                                <li><a href="#" role="menuitem">contact us</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="navBurger" role="navigation" id="navToggle"></div>
                     <div class="search-form">
                         <a id="search-fancy" href="javascript:;" class="icon-search"></a>
                     </div>
@@ -207,65 +154,71 @@
             <section class="our-work">
                 <div class="our-work__content">
                     <div class="container">
-                        <h2>Some of Our Latest Work</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent justo ligula, interdum
-                            ut
-                            lobortis quis, interdum vitae metus. Proin fringilla metus non nulla cursus, sit amet
-                            rutrum
-                            est
-                            pretium.</p>
-                        <div class="our-work__items">
-                            <div class="our-work__item">
-                                <div class="our-work__inner">
-                                    <a class="our-work__fancy-img"
-                                        href="https://source.unsplash.com/Uszp5Gkg0AI/2400x1600" data-fancybox="images">
-                                        <div class="our-work__img">
-                                            <img src="img/slider-ourwork.jpg" alt="">
-                                        </div>
-                                    </a>
+                        <div class="our-work__wrap">
+                            <h2>Some of Our Latest Work</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent justo ligula, interdum
+                                ut
+                                lobortis quis, interdum vitae metus. Proin fringilla metus non nulla cursus, sit amet
+                                rutrum
+                                est
+                                pretium.</p>
+                            <div class="our-work__items">
+                                <div class="our-work__item">
+                                    <div class="our-work__inner">
+                                        <a class="our-work__fancy-img"
+                                            href="https://source.unsplash.com/Uszp5Gkg0AI/2400x1600"
+                                            data-fancybox="images">
+                                            <div class="our-work__img">
+                                                <img src="img/slider-ourwork.jpg" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="our-work__title">Circle Icons</a>
                                 </div>
-                                <a href="#" class="our-work__title">Circle Icons</a>
-                            </div>
-                            <div class="our-work__item">
-                                <div class="our-work__inner">
-                                    <a class="our-work__fancy-img"
-                                        href="https://source.unsplash.com/Uszp5Gkg0AI/2400x1600" data-fancybox="images">
-                                        <div class="our-work__img">
-                                            <img src="img/slider-ourwork2.jpg" alt="">
-                                        </div>
-                                    </a>
+                                <div class="our-work__item">
+                                    <div class="our-work__inner">
+                                        <a class="our-work__fancy-img"
+                                            href="https://source.unsplash.com/Uszp5Gkg0AI/2400x1600"
+                                            data-fancybox="images">
+                                            <div class="our-work__img">
+                                                <img src="img/slider-ourwork2.jpg" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="our-work__title">Arrows</a>
                                 </div>
-                                <a href="#" class="our-work__title">Arrows</a>
-                            </div>
-                            <div class="our-work__item">
-                                <div class="our-work__inner">
-                                    <a class="our-work__fancy-img"
-                                        href="https://source.unsplash.com/Uszp5Gkg0AI/2400x1600" data-fancybox="images">
-                                        <div class="our-work__img">
-                                            <img src="img/slider-ourwork.jpg" alt="">
-                                        </div>
-                                    </a>
+                                <div class="our-work__item">
+                                    <div class="our-work__inner">
+                                        <a class="our-work__fancy-img"
+                                            href="https://source.unsplash.com/Uszp5Gkg0AI/2400x1600"
+                                            data-fancybox="images">
+                                            <div class="our-work__img">
+                                                <img src="img/slider-ourwork.jpg" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="our-work__title">Portfolio Theme</a>
                                 </div>
-                                <a href="#" class="our-work__title">Portfolio Theme</a>
                             </div>
                         </div>
-                        <h2>Do you Like What You See?</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent justo ligula, interdum
-                            ut
-                            lobortis quis, interdum vitae metus. Proin fringilla metus non nulla cursus, sit amet
-                            rutrum
-                            est pretium.</p>
-                        <a href="#" class="btn">Purchase</a>
+                        <div class="our-work__purchase">
+                            <h2>Do you Like What You See?</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent justo ligula, interdum
+                                ut
+                                lobortis quis, interdum vitae metus. Proin fringilla metus non nulla cursus, sit amet
+                                rutrum
+                                est pretium.</p>
+                            <a href="#" class="btn">Purchase</a>
+                        </div>
                     </div>
                 </div>
             </section>
         </main>
         <footer id="footer">
             <div class="container">
-                <div class="footer__heading">
-                    <div class="footer__social-info">
-                        <div class="footer__top">
-                            <div class="footer__top-wrap">
+                    <div class="footer__heading">
+                        <div class="footer__holder">
+                            <div class="footer__holder-wrap">
                                 <div class="logo">
                                     <a href="#">
                                         <img src="img/logo.png" alt="">
@@ -284,12 +237,13 @@
                         <div class="footer__info">
                             <div class="footer__info-contact">
                                 <h3>Contact info</h3>
-                                <ul class="footer__contacs">
-                                    <li class="footer__contacs-adress">222 Ave C South
+                                <ul class="footer__contacts">
+                                    <li class="footer__contacts-adress">222 Ave C South
                                         Saskatoon, Saskatchewan
                                         Canada S7K 2N5</li>
-                                    <li><a href="#" class="footer__contacs-email">info@deliver.ca</a></li>
-                                    <li class="footer__contacs-tel"><a href="tel:1.306.222.3456">1.306.222.3456</a></li>
+                                    <li><a href="mailto:info@deliver.ca"
+                                            class="footer__contacts-email">info@deliver.ca</a></li>
+                                    <li class="footer__contacts-tel"><a href="tel:1.306.222.3456">1.306.222.3456</a></li>
                                 </ul>
                             </div>
                             <div class="footer__info-contact">
@@ -303,17 +257,16 @@
                                     <li><a href="#">Contact Us</a></li>
                                 </ul>
                             </div>
-                            <div class="footer__news">
+                            <div class="footer__newsletter">
                                 <h3>Newsletter</h3>
                                 <p>Lorem ipsum dolor sit amet dolor consectetur adipiscing elit.</p>
                                 <form class="footer__news-form">
-                                    <input placeholder="Email" type="email">
-                                    <button type="submit">OK</button>
+                                    <input placeholder="Email" type="text">
+                                    <input value="OK" type="button">
                                 </form>
                             </div>
                         </div>
                     </div>
-                </div>
                 <div class="footer__area">
                     <div class="footer__copy">
                         <p>Copyright 2013 <a href="#">Deliver</a>. All Rights Reserved.</p>
