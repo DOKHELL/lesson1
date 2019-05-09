@@ -7,6 +7,7 @@
 }
 .header-top {
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
   border-bottom: 1px solid #fff;
   padding-bottom: 31px;
@@ -22,6 +23,7 @@
 .menu-wrap {
   display: flex;
   justify-content: space-between;
+  line-height: 0;
 }
 ul.drop-menu ul{
   background-color: rgba(122, 119, 128,7);
@@ -70,6 +72,7 @@ ul.drop-menu > li:hover ul{
     color: #fff;
     transition: color 0.8s;
     position: relative;
+    line-height: 24px;
     &:hover {
       color: $green;
     }
@@ -116,11 +119,10 @@ ul.drop-menu > li:hover ul{
 }
 .social {
     font-size: 0;
-    padding-top: 10px;
-    margin-right: -10px;
+    margin-left: -10px;
     li {
       display: inline-block;
-      padding-right: 10px;
+      padding-left: 10px;
     }
   a {
     background-color: #fff;

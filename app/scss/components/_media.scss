@@ -27,8 +27,7 @@
   .slick-btn {
     display: none !important;
   }
-  .slider-item-1,
-  .slider-item-2 {
+  .slider-item {
     h1 {
       font-size: 30px;
     }
@@ -59,7 +58,7 @@
     align-items: center;
   }
   .footer__top {
-    max-width: 80%;
+    max-width: 85%;
     margin-bottom: 20px;
   }
   .footer__top-wrap {
@@ -147,8 +146,7 @@
   }
 }
 @media (max-width: $phone) {
-  .slider-item-1,
-  .slider-item-2 {
+  .slider-item {
     h1 {
       font-size: 25px;
     }
@@ -176,12 +174,14 @@
   }
 }
 @media (max-width: 380px) {
-  .our-work__item a img {
-    padding-right: 13px;
-  }
   .our-work__content {
     &:before {
       height: 76%;
+    }
+  }
+  .services__item {
+    a {
+      padding-top: 0;
     }
   }
 }

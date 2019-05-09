@@ -43,24 +43,29 @@
 .our-work__item {
   width: 33.333%;
 }
-.our-work__fancy-img img {
-  padding: 15px 12px 25px;
-  z-index: 1;
+.our-work__img{
   transition: opacity .7s;
   &:hover {
-    opacity: 0.4;
+    opacity: 0.4; 
     &:after {
       content: "\f067";
       position: absolute;
       font-family: "icomoon";
-      top: 30%;
-      left: 30px;
+      top: 50%;
+      left: 50%;
+     
+      transform: translate(-50%,-50%);
+      z-index: 3;
       right: 0;
+      color: #1f1e1e;
       font-size: 60px;
-      color: red;
-      opacity: 0.9;
+      opacity: 1;
     }
   }
+}
+.our-work__fancy-img img {
+  padding: 15px 12px 25px;
+  z-index: 1;
 }
 .our-work__title {
   font-size: 18px;

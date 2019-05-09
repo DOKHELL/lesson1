@@ -102,6 +102,7 @@
   font-size: 12px;
   font-family: $nov-font;
   line-height: 18px;
+  margin: 0;
   a {
     color: #fff;
     transition: color 0.6s;
@@ -109,16 +110,19 @@
       color: #828282;
     }
   }
+  p{
+    margin: 0;
+  }
 }
 .footer__page {
   ul {
     font-size: 0;
+    line-height: 0;
+    margin-left: -20px;
   }
   li {
     display: inline-block;
-    & + li {
-      padding-left: 19px;
-    }
+    padding-left: 20px;
   }
   a {
     color: $color-text;

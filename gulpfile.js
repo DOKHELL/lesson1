@@ -33,6 +33,7 @@ gulp.task('scripts', function () {
 		'app/libs/jquery/dist/jquery.min.js',
 		"app/libs/slick-carousel/slick/slick.min.js",
 		"app/libs/fancybox-master/dist/jquery.fancybox.min.js",
+		"app/libs/matchHeight/jquery.matchHeight.js",
 		 // Берем jQuery
 	])
 		.pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js

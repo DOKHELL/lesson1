@@ -26,8 +26,6 @@ $(function initHolderBg() {
     }
   });
 })
-
-
 $("#search-fancy").on('click', function () {
   $.fancybox.open('<div class="message"><h2>Hello!</h2><p>You are awesome!</p></div>');
 });
@@ -49,4 +47,7 @@ $(function () {
     event.preventDefault();
     menu.toggleClass('m-menu__active');
   });
+});
+$(function () {
+  $('.services__matchheight').matchHeight();
 });
