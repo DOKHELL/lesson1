@@ -111,6 +111,7 @@
   background-color: transparent;
   color: white;
   font-size: 18px;
+  user-select: none;
   padding: 0;
   border: none;
   cursor: pointer;
@@ -163,7 +164,59 @@
 .locked {
   overflow: hidden;
 }
-
+.navBurger {
+  cursor: pointer;
+  display: none;
+  background: #fff;
+  box-sizing: border-box;
+  background-clip: content-box;
+  width: 30px;
+  height: 24px;
+  border-top: 11px solid transparent;
+  border-bottom: 11px solid transparent;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    background: #fff;
+    height: 2px;
+    width: 100%;
+    right: 0;
+    will-change: rotate;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+  }
+  &:before {
+    top: -10px;
+  }
+  &:after {
+    bottom: -10px;
+  }
+  &.active {
+    background: transparent;
+    background-clip: content-box;
+  }
+  &.active:before {
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    top: 0;
+    background: #eee;
+    width: 110%;
+  }
+  &.active:after {
+    bottom: 0;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    background: #eee;
+    width: 110%;
+  }
+}
 @keyframes fadeInRight {
   0% {
     opacity: 0;
