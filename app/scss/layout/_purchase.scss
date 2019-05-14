@@ -1,0 +1,14 @@
+.purchase{
+    text-align: center;
+    padding: 70px 0 60px;
+}
+.purchase__info{
+    .btn {
+        background-color: $green;
+        border: 2px solid $green;
+        &:hover {
+          color: $green;
+          background-color: #fff;
+        }
+      }
+}

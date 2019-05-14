@@ -11,9 +11,6 @@
 }
 .footer__holder {
   max-width: 37%;
-  p {
-    margin: 0;
-  }
 }
 .footer__holder-wrap {
   display: flex;
@@ -25,15 +22,12 @@
   display: flex;
 }
 .footer__info-contact {
-  max-width: 170px;
+  max-width: 170px; 
   h3 {
     font-family: $nov-font;
     font-size: 18px;
     color: #fff;
     margin-bottom: 20px;
-  }
-  a {
-    color: $color-text;
   }
 }
 .footer__info {
@@ -42,17 +36,18 @@
   max-width: 650px;
   width: 100%;
 }
-.footer__contacts-adress {
-  margin-bottom: 13px;
+.footer__contacts address{
+  margin-bottom: 10px;
 }
 .footer__contacts-email {
   margin-bottom: 15px;
   transition: color .7s;
+  color: $color-text;
   &:hover {
     color: #fff;
   }
 }
-.footer__contacts-tel a {
+.footer__contacts-tel {
   color: #fff;
   font-size: 18px;
   transition: opacity .7s;
@@ -61,10 +56,11 @@
   }
 }
 .footer__links {
-  position: relative;
   a {
     padding-left: 17px;
     transition: color .7s;
+    position: relative;
+    color: $color-text;
   }
   a:before {
     content: "\e906";
@@ -84,9 +80,6 @@
     font-size: 18px;
     color: #fff;
     margin-bottom: 20px;
-  }
-  p {
-    margin-bottom: 23px;
   }
   input {
     max-width: 160px;
@@ -110,9 +103,6 @@
     &:hover {
       color: #828282;
     }
-  }
-  p {
-    margin: 0;
   }
 }
 .footer__page {

@@ -58,7 +58,7 @@ function dropdowns() {
 function burgermenu(){
   $("#navToggle").click(function() {
     $(this).toggleClass("active");
-    $(".overlay").toggleClass("open");
+    $(".menu-wrap").toggleClass("open");
     // this line ▼ prevents content scroll-behind
     $("body").toggleClass("locked"); 
   });
@@ -66,11 +66,12 @@ function burgermenu(){
 
 
 
-
 //Runs
-$( document ).ready( slider );
-$( document ).ready( initHolderBg );
-$( document ).ready( searchfancy );
-$( document ).ready( galeryfancy );
-$( document ).ready( matchheight );
-$( document ).ready( burgermenu );
+$(document).ready(function(){
+  slider();
+  initHolderBg();
+  searchfancy();
+  galeryfancy();
+  matchheight();
+  burgermenu();
+});

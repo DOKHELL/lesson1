@@ -3,29 +3,33 @@
   margin: 0 auto;
   padding: 0 10px;
 }
-h2 {
-  font-family: $nov-font;
-  font-size: 22px;
-  color: #666262;
-  text-transform: uppercase;
+.footer__news-form {
+  input {
+    height: 40px;
+    background-color: #fff;
+    color: $color-text;
+    padding: 15px;
+  }
+  button {
+    min-width: 53px;
+    height: 40px;
+    background-color: #828282;
+    color: #fff;
+    font-family: $nov-font;
+    text-transform: uppercase;
+  }
 }
-p {
-  font-family: $hel-font;
-  color: $color-text;
-}
-.footer__news-form{
-input {
-  height: 40px;
-  background-color: #fff;
-  color: $color-text;
-  padding: 15px;
-}
-button {
-  min-width: 53px;
-  height: 40px;
-  background-color: #828282;
-  color: #fff;
-  font-family: $nov-font;
-  text-transform: uppercase;
-}
+.title-holder {
+  margin-bottom: 55px;
+  p {
+    margin: 0 0 45px;
+    margin: 0 auto;
+    max-width: 840px;
+  }
+  h2 {
+    font-family: $nov-font;
+    font-size: 22px;
+    color: #666262;
+    text-transform: uppercase;
+  }
 }

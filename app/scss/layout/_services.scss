@@ -1,16 +1,9 @@
 .services {
   padding: 55px 0 60px;
   text-align: center;
-}
-.services__info {
-  padding-bottom: 55px;
-  border-bottom: 1px solid #ccc;
-  h2 {
-    margin-bottom: 17px;
-  }
-  p {
-    max-width: 845px;
-    margin: 0 auto;
+  .title-holder {
+    padding-bottom: 55px;
+    border-bottom: 1px solid #ccc;
   }
 }
 .services__item {
@@ -20,7 +13,6 @@
   li {
     max-width: 355px;
     font-family: $hel-font;
-    margin-top: 55px;
   }
   .services__item-img {
     margin-bottom: 22px;
@@ -35,13 +27,12 @@
   }
   a {
     color: $green;
-    padding-top: 18px;
     transition: opacity .7s;
     &:hover {
       opacity: .6;
     }
   }
-  P{
-    margin: 0;
-  }
+}
+.services__matchheight{
+  margin-bottom: 20px;
 }

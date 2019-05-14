@@ -31,9 +31,9 @@
     width: 100%;
     text-align: center;
   }
-  .our-work__content {
+  .our-work{
     &:before {
-      height: 75%;
+      height: 95%;
     }
   }
   .our-work__title {
@@ -70,7 +70,7 @@
   .navBurger {
     display: block;
   }
-  .overlay {
+  .menu-wrap {
     position: fixed;
     background: #252a36;
     top: 0;
@@ -108,7 +108,7 @@
       }
     }
   }
-  .overlayMenu {
+  .navigation-menu {
     position: absolute;
     text-align: right;
     top: 50%;
@@ -150,6 +150,9 @@
   .footer__info-contact {
     max-width: 40%;
   }
+  .purchase{
+    padding: 40px 0 30px;
+}
 }
 @media (max-width: $small) {
   #header {
@@ -187,16 +190,13 @@
     padding-bottom: 30px;
     margin-bottom: 20px;
   }
-  .our-work__content {
-    padding: 40px 0 43px;
+  .our-work {
+    padding: 40px 0 0px;
     &:before {
-      height: 80%;
+      height: 97%;
     }
     p {
       margin-bottom: 20px;
-    }
-    h2 {
-      font-size: 17px;
     }
   }
   .footer__contacts-adress,
@@ -217,17 +217,14 @@
     text-align: center;
     flex-wrap: wrap;
   }
-  .m-menu {
-    line-height: 40px;
-  }
 }
 @media (max-width: $tiny) {
   .our-work__fancy-img {
     padding: 15px 17px 25px;
   }
-  .our-work__content {
+  .our-work{
     &:before {
-      height: 76%;
+      height: 98%;
     }
   }
   .slider-item {
@@ -260,10 +257,10 @@
 }
 //fix burger menu on landscape mode
 @media (max-height: 390px) {
-  .overlayMenu ul li a {
+  .navigation-menu ul li a {
     padding: 0 5px;
   }
-  .overlayMenu {
+  .navigation-menu {
     top: 45%;
   }
   .dropbtn:after {
