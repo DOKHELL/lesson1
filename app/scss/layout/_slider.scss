@@ -1,4 +1,4 @@
-.slick-initialized .slick-slide{
+.slick-initialized .slick-slide {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7,7 +7,7 @@
 .slider-item {
   text-align: center;
   z-index: 2;
-  padding: 210px 0px 100px;
+  padding: 210px 0 100px;
   position: relative;
   &:after {
     content: "";

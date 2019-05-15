@@ -37,7 +37,8 @@ function galeryfancy() {
   });
 }
 function matchheight() {
-  $('.services__matchheight').matchHeight();
+  $(".services__matchheight-title").matchHeight();
+  $(".services__matchheight-discription").matchHeight();
 }
 function dropdowns() {
     document.getElementById("myDropdown").classList.toggle("show");

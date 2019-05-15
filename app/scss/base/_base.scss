@@ -4,6 +4,7 @@
 html,
 body {
   height: 100%;
+  -webkit-font-smoothing: antialiased;
 }
 body {
   font-size: 16px;
@@ -18,11 +19,18 @@ h2,
 h3,
 h4,
 h5,
-h6,
+h6 {
+  margin: 0 0 20px;
+  font-family: $hel-font;
+  color: $color-text;
+}
 p {
   margin: 0 0 20px;
   font-family: $hel-font;
   color: $color-text;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 h1 {
   font-size: 36px;

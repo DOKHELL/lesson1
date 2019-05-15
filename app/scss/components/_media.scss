@@ -17,7 +17,7 @@
   }
   .services__item {
     li {
-      max-width: 50%;
+      width: 50%;
       & + li {
         padding-left: 20px;
       }
@@ -31,7 +31,7 @@
     width: 100%;
     text-align: center;
   }
-  .our-work{
+  .our-work {
     &:before {
       height: 95%;
     }
@@ -150,7 +150,7 @@
   .footer__info-contact {
     max-width: 40%;
   }
-  .purchase{
+  .purchase {
     padding: 40px 0 30px;
 }
 }
@@ -163,7 +163,7 @@
   }
   .services__item {
     li {
-      max-width: 90%;
+      width: 100%;
       margin-top: 45px;
       & + li {
         padding-left: 0;
@@ -191,7 +191,7 @@
     margin-bottom: 20px;
   }
   .our-work {
-    padding: 40px 0 0px;
+    padding: 40px 0 0;
     &:before {
       height: 97%;
     }
@@ -222,7 +222,7 @@
   .our-work__fancy-img {
     padding: 15px 17px 25px;
   }
-  .our-work{
+  .our-work {
     &:before {
       height: 98%;
     }
